@@ -1,4 +1,4 @@
-def buble_sort(a):
+def bubble_sort(a):
   n = len(a)
   m = n - 1
   while m > 0:
@@ -32,5 +32,5 @@ def quicksort(x):
 if __name__ == "__main__":
   import timeit
   data = [0,7,2,10,2,5]
-  print(timeit.timeit("buble_sort(data)", setup="from __main__ import buble_sort, data", number = 10000))
+  print(timeit.timeit("bubble_sort(data)", setup="from __main__ import bubble_sort, data", number = 10000))
   print(timeit.timeit("quicksort(data)", setup="from __main__ import quicksort, data", number = 10000))
